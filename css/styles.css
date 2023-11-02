@@ -548,6 +548,7 @@ footer .social-links {
   border-radius: 4px;
   padding: 72px 24px 24px 24px; 
 }
+
 .modal-close-button {
   position: absolute;
   top: 24px;
@@ -715,4 +716,34 @@ color: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
   background-color: #404BBF;
   border: none;
   fill: #F4F4FD;
+}
+
+
+/* MEDIA */
+
+/* MOBILE VERSION */
+@media (min-width: 320px) {
+  body {
+    background-color: #2196f3;
+    
+  }
+}
+
+.modal.is-open{
+  opacity:1;
+  visibility: visible;
+}
+/* TABLET VERSION */
+@media (min-width: 768px) {
+  body {
+    background-color: #2196f3;
+    
+  }
+}
+/* DESKTOP VERSION */
+@media (min-width: 1158px) {
+  body {
+    background-color: #2196f3;
+    
+  }
 }
