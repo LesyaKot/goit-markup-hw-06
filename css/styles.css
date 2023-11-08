@@ -33,7 +33,7 @@ img {
   max-width: 320px;
   padding-left: 16px;
   padding-right: 16px;
-  margin-left: o auto;
+  margin-left: 0 auto;
   margin-right: 0 auto;
 }
 header .container {
@@ -167,21 +167,16 @@ a {
 
 /* Tablet styles */
 
-@media (min-width: 768px) and (max-width: 1157px) {
+@media (min-width: 768px) {
   .container {
     min-width: 768px;
-    max-width: 1157px;
     margin: 0 auto;
   }
   header .container {
     display: flex;
     align-items: center;
   }
-  /* header .a {
-    display: flex;
-    padding-top: 24px;
-    padding-bottom: 24px;
-  } */
+  
   .logo {
     padding-top: 25.5px;
     padding-bottom: 25.5px;
@@ -236,8 +231,7 @@ a {
     color: var(--OCEAN, #404bbf);
   }
   .head-contacts {
-    font-style: normal;
-    align-self: flex-end;
+    font-style: normal;    
   }
   .head-contacts-menu {
     display: flex;
@@ -409,7 +403,10 @@ a {
 }
 
 /*  HERO TABLET */
-@media screen and (min-width: 768px) and (max-width: 1157px) {
+@media screen and (min-width: 768px) {
+  .container {
+    min-width: 768px;
+  }
   .page-solutions {
     width: 768px;
     background-image: linear-gradient(
@@ -516,9 +513,9 @@ a {
 
 /* ADVANTAGES TABLET */
 
-@media screen and (min-width: 768px) and (max-width: 1157px) {
+@media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    min-width: 768px;
   }
   .advantages {
     background-color: #fff;
@@ -718,7 +715,10 @@ a {
 
 /* TABLET TEAM SECTION */
 
-@media screen and (min-width: 768px) and (max-width: 1157px) {
+@media screen and (min-width: 768px) {
+  .container{
+    min-width: 768px;
+  }
   .team-section {
     background-color: #f4f4fd;
     padding: 96px 0;
@@ -961,7 +961,10 @@ a {
 
 /* TABLET PORTFOLIO */
 
-@media screen and (min-width: 768px) and (max-width: 1157px) {
+@media screen and (min-width: 768px) {
+  .container{
+    min-width: 768px;
+  }
   .portfolio {
     padding: 96px 0;
     border-bottom: 1px solid #e7e9fc;
@@ -1100,11 +1103,8 @@ a {
 /* MOBILE VERSION */
 .page-bottom {
   background-color: #2e2f42;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+  padding: 96px 0;
+ }
 
 .logo-footer {
   color: #4d5ae5;
@@ -1116,21 +1116,25 @@ a {
   text-transform: uppercase;
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-left: 0 auto;
-  margin-right: 0 auto;
-  padding-top: 97.5px;
-  padding-bottom: 17.5px;
+  justify-content: center; 
+  
 }
 .logo-studio-bottom {
   color: #f4f4fd;
+}
+.foot-container{
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+  align-items: center;
 }
 .page-bottom-text {
   color: #f4f4fd;
   line-height: 1.5;
   letter-spacing: 0.02em;
   width: 288px;
-  margin-bottom: 72px;
+  margin-top: 17.5px;
+ 
 }
 .bottom-text {
   font-weight: 500;
@@ -1147,8 +1151,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
-  margin-bottom: 72px;
+  gap: 16px;  
 }
 footer .social-links {
   width: 24px;
@@ -1201,8 +1204,7 @@ footer .social-links {
   cursor: pointer;
   background-color: #4d5ae5;
   border: none;
-  margin-bottom: 96px;
-  margin-left: 77px;
+  margin: 0 auto; 
 }
 .subscribe-icon {
   margin-left: 16px;
@@ -1210,38 +1212,52 @@ footer .social-links {
 
 /* TABLET FOOTER */
 @media screen and (min-width: 768px)  {
+  .container{
+    min-width: 768px;
+  }
   .page-bottom {
     background-color: #2e2f42;
     padding: 96px 0;
   }
   .foot-container {
-     
+   display: flex;
+   flex-direction: row;  
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 72px 24px;
+   padding-left: 108px;
+   align-items: baseline;
   }
   .foot-info {
-    padding-left: 108px;
-    max-width: 264px;
     text-align: left;
     }
   .logo-footer {
     padding: 0;
     text-align: left;
-    
-  }
+      }
   .page-bottom-text {
     color: #f4f4fd;
     line-height: 1.5;
     letter-spacing: 0.02em;
     width: 264px;
-    margin-top: 17.5px;
-    margin-bottom: 112px;
+    margin-top: 17.5px;    
   }  
-  .foot-icons{
-    
-  }
    .subscribe-container{
-    margin-left: 108px;
+    text-align: left;
+    }
+    .subscribe-text {
+      color: var(--WHITE, #fff);
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.5;
+      letter-spacing: 0.32px;
+      margin-bottom: 16px; 
+      justify-content: flex-start;            
+    }
+  .subscribe-form {
+    display: flex;
+    gap: 24px; 
   }
-  
   .subscribe-input {
     width: 264px;
     height: 40px;
