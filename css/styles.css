@@ -389,7 +389,7 @@ a {
 /*  HERO DESKTOP */
 @media screen and (min-width: 1158px) {
   .page-solutions {
-    width: 1158px;
+    min-width: 1158px;
     background-image: linear-gradient(
         to bottom,
         rgba(46, 47, 66, 0.7),
@@ -961,7 +961,6 @@ a {
     padding: 0;
   }
   .portfolio-menu .portfolio.menu.item {   
-    
     width: calc((100% - 24px) /2);
   }
   .portfolio-container {
