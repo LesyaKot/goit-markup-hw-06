@@ -59,7 +59,7 @@ img {
   screen and (min-resolution: 2dppx) and (min-width: 1158px),
   screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
   .page-solutions {
-    background-image: url(../images/wallpaper.jpg);
+    background-image: url(../images/desktop/wallpaper_d@2x.jpg);
   }
 }
 /*HEADER */
@@ -287,6 +287,18 @@ a {
   .head-menu-nav-item {
     color: #404bbf;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .head-contacts-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+  .head-menu-contacts-item {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    color: var(--SLATE, #434455);
   }
   .tel-email:hover,
   .tel-email:focus {
@@ -552,7 +564,7 @@ a {
     background-color: #fff;
     padding: 120px 0;
   }
-  .visually-hidden {
+  /* .visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -563,7 +575,7 @@ a {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-  }
+  } */
   .icon-container {
     display: flex;
     align-items: center;
@@ -583,9 +595,10 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 24px;
+    gap:72px 24px;
     padding: 0;
     margin: 0;
+    width: 1158px;
   }
   .advantages-title {
     color: #2e2f42;
@@ -962,8 +975,8 @@ a {
     margin: 0;
     padding: 0;
   }
-  .portfolio-menu .portfolio.menu.item {   
-    width: calc((100% - 24px) /2);
+  .portfolio-menu .portfolio.menu.item {
+    width: calc((100% - 24px) / 2);
   }
   .portfolio-container {
     margin: 0;
@@ -1244,7 +1257,7 @@ footer .social-links {
     padding: 8px 24px;
     border-radius: 4px;
     background: var(--IRIS, #4d5ae5);
-    margin-left: 24px;
+    /* margin-left: 24px; */
     min-width: 165px;
     height: 40px;
     display: flex;
@@ -1269,9 +1282,9 @@ footer .social-links {
   .page-bottom {
     background-color: #2e2f42;
     padding: 100px 0;
-    display: flex;    
+    display: flex;
   }
-    .logo {
+  .logo-footer {
     color: #4d5ae5;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -1279,10 +1292,19 @@ footer .social-links {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    display: flex;    
+    justify-content: left;
   }
   .logo-studio-bottom {
     color: #f4f4fd;
   }
+  .bottom-text{
+    justify-content: left;    
+  }
+  /* .foot-icons{
+    margin-left: 120px;
+    margin-right: 80px;
+  } */
   .page-bottom-text {
     color: #f4f4fd;
     line-height: 1.5;
@@ -1296,12 +1318,9 @@ footer .social-links {
     flex-wrap: nowrap;
     padding: 0;
     margin: 0 auto;
-      }
-  .foot-info {
-    margin-right: 120px;
-    margin-left: 156px;
+    gap:120px 80px;
   }
-  .bottom-text {
+    .bottom-text {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -1322,9 +1341,9 @@ footer .social-links {
     height: 24px;
     background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .subscribe-container {
+  /* .subscribe-container {
     margin-left: 80px;
-  }
+  } */
   .subscribe-text {
     color: var(--WHITE, #fff);
     font-size: 16px;
@@ -1354,7 +1373,7 @@ footer .social-links {
     padding: 8px 24px;
     border-radius: 4px;
     background: var(--IRIS, #4d5ae5);
-    margin-left: 24px;
+    /* margin-left: 24px; */
     min-width: 165px;
     height: 40px;
     display: flex;
@@ -1571,7 +1590,7 @@ footer .social-links {
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
