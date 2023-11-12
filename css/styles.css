@@ -72,8 +72,8 @@ img {
 @media screen and (min-width: 480px) {
   .container {
     max-width: 352px;
-    margin-left: 0 auto;
-    margin-right: 0 auto;
+    /* margin-left: 0 auto;
+    margin-right: 0 auto; */
   }
 }
 header .container {
@@ -122,11 +122,9 @@ header .container {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 0;
   border-radius: 50%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 .mob-menu {
   display: block;
@@ -141,9 +139,7 @@ a {
   color: #2e2f42;
   margin-bottom: 168px;
   gap: 40px;
-  margin-left: 0 auto;
-  margin-right: 0 auto;
-}
+  }
 .page-nav-item {
   font-size: 36px;
   font-weight: 700;
@@ -159,8 +155,8 @@ a {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-left: 0 auto;
-  margin-right: 0 auto;
+  /* margin-left: 0 auto;
+  margin-right: 0 auto; */
   margin-bottom: 48px;
 }
 .contacts-menu-item {
@@ -315,7 +311,7 @@ a {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/mobile/wallpaper_m\ 1x.jpg);
+    url(../images/mobile/wallpaper_m.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -361,7 +357,7 @@ a {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/tablet/wallpaper_t\ 1x.jpg);
+      url(../images/tablet/wallpaper_t.jpg);
     margin: 0 auto;
     padding-top: 112px;
 
@@ -595,7 +591,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:72px 24px;
+    gap: 72px 24px;
     padding: 0;
     margin: 0;
     width: 1158px;
@@ -729,7 +725,7 @@ a {
     justify-content: center;
   }
   .team-menu .team-item {
-    width: calc(100%-24px) / 2;
+    width: calc((100% - 24px) / 2);
   }
   .team-title {
     color: #2e2f42;
@@ -808,7 +804,6 @@ a {
   }
 }
 /* DESKTOP OUR TEAM */
-
 @media screen and (min-width: 1158px) {
   .team-section {
     background-color: #f4f4fd;
@@ -824,7 +819,7 @@ a {
     align-items: center;
   }
   .team-menu .team-item {
-    width: calc(100%-72px) / 4;
+    width: calc((100% - 72px) / 4);
   }
   .team-title {
     color: #2e2f42;
@@ -1033,7 +1028,7 @@ a {
     border: 1px solid #e7e9fc;
     border-top: none;
   }
-  .portfolio.menu.item {
+  .portfolio-menu-item {
     padding: 32px 16px;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -1060,6 +1055,7 @@ a {
     background-color: #4d5ae5;
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 100;
   }
   .portfolio-menu-item:hover .overlay-text,
   .portfolio-menu-item:focus .overlay-text {
@@ -1141,8 +1137,7 @@ a {
 footer .social-links {
   width: 24px;
   height: 24px;
-  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 .subscribe-container {
   display: block;
 }
@@ -1292,14 +1287,14 @@ footer .social-links {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    display: flex;    
+    display: flex;
     justify-content: left;
   }
   .logo-studio-bottom {
     color: #f4f4fd;
   }
-  .bottom-text{
-    justify-content: left;    
+  .bottom-text {
+    justify-content: left;
   }
   /* .foot-icons{
     margin-left: 120px;
@@ -1318,9 +1313,9 @@ footer .social-links {
     flex-wrap: nowrap;
     padding: 0;
     margin: 0 auto;
-    gap:120px 80px;
+    gap: 120px 80px;
   }
-    .bottom-text {
+  .bottom-text {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -1339,7 +1334,7 @@ footer .social-links {
   footer .social-links {
     width: 24px;
     height: 24px;
-    background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   /* .subscribe-container {
     margin-left: 80px;
@@ -1443,7 +1438,7 @@ footer .social-links {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
   padding: 0;
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -1629,7 +1624,7 @@ footer .social-links {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
     padding: 0;
     border-radius: 50%;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
