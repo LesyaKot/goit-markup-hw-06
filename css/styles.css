@@ -234,7 +234,8 @@ a {
     border-radius: 2px;
     left: 0;
     bottom: -1px;
-    background: var(--OCEAN, #404bbf);
+    color: var(--OCEAN, #404bbf);
+    /* background: var(--OCEAN, #404bbf); */
     content: "";
   }
   .link {
