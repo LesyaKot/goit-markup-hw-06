@@ -282,7 +282,7 @@ a {
   }
   .link:hover,
   .lin:focus {
-    color: #404bbf;
+    /* color: #404bbf; */
   }
   .head-menu-nav-item {
     color: #404bbf;
