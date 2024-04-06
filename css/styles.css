@@ -147,9 +147,9 @@ a {
   text-transform: capitalize;
   gap: 40px;
 }
-.page-nav-item:first-child .link {
+/* .page-nav-item:first-child .link {
   color: var(--OCEAN, #404bbf);
-}
+} */
 .cont {
   display: flex;
   flex-direction: column;
@@ -167,9 +167,9 @@ a {
   color: #2e2f42;
   gap: 24px;
 }
-.contacts-menu-item:first-child .link {
+/* .contacts-menu-item:first-child .link {
   color: #4d5ae5;
-}
+} */
 .socials {
   display: flex;
   align-items: center;
@@ -234,7 +234,7 @@ a {
     border-radius: 2px;
     left: 0;
     bottom: -1px;
-    color: var(--OCEAN, #404bbf);
+    /* color: var(--OCEAN, #404bbf); */
     /* background: var(--OCEAN, #404bbf); */
     content: "";
   }
@@ -280,10 +280,11 @@ a {
     margin-left: auto;
     margin-right: auto;
   }
-  .link:hover,
+  /* .link:hover,
   .lin:focus {
-    /* color: #404bbf; */
-  }
+     color: #404bbf;
+  }  */
+
   .head-menu-nav-item {
     /* color: #404bbf; */
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -307,11 +308,12 @@ a {
     letter-spacing: 0.32px;
     color: var(--SLATE, #434455);
   }
-  .tel-email:hover,
+}
+  /* .tel-email:hover,
   .tel-email:focus {
     color: #404bbf;
-  }
-}
+  } */
+
 
 /* HERO */
 /* MOBILE */
@@ -1354,7 +1356,7 @@ footer .social-links {
   }
   footer .social-links:hover,
   footer .social-links:focus {
-    background-color: #31d0aa;
+    background-color: #b7d1cb;
   }
   footer .social-links {
     width: 24px;
